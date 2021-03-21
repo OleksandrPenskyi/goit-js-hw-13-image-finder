@@ -4,7 +4,6 @@ import updateHTML from './js/updateHTML'; // функция создания и 
 import btn from './js/btn-work'; // механихм работы кнопок, спиннеров и т.д.
 import onSucess from './js/notifications';
 import modalWindow from './js/modalWindow';
-
 import './styles.css';
 
 formRef.addEventListener('submit', event => {
