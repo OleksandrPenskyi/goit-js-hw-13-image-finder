@@ -6,7 +6,6 @@ export default {
   makeMarkupHTML(result) {
     const markup = galerryList(result);
     galerryRef.insertAdjacentHTML('beforeend', markup);
-
     // для плавного скрола к загруженной инфе
     window.scrollTo({
       top: document.documentElement.offsetHeight,

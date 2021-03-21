@@ -20,10 +20,15 @@
   height: auto;
   display: block;
   max-height: 300px;
+  transition: transform 150ms linear;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
 }
 
 .photo-card {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 370px;
 }
 
@@ -64,4 +69,34 @@
 
 .is-hidden {
   display: none;
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  /* transition: background-color var(--animation-duration) var(--timing-function); */
+  outline: none;
+  background-image: url('./images/icon-close.svg');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.closeModalBtn:hover {
+  background-color: #fff;
+  background-image: url('./images/icon-close-black.svg');
 }
