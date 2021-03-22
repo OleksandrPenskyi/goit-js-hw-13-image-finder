@@ -23,7 +23,7 @@ formRef.addEventListener('submit', event => {
   galerryRef.addEventListener('click', modalWindow); // по клику на img в галерее открывется модалка
 });
 
-mainBtnRef.addEventListener('click', event => {
+mainBtnRef.addEventListener('click', () => {
   btn.onBtnSpinnerShow(); // показываем спиннер на кнопке Load more
   apiService.increasePageNumber();
   apiService.query = inputRef.value; // передаем значение input в обьект

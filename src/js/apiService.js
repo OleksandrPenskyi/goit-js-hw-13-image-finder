@@ -10,9 +10,7 @@ export default {
       `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.userQuery}&page=${this.page}&per_page=12&key=${this.apiKey}`,
     )
       .then(res => res.json())
-      .then(({ hits }) => {
-        return hits;
-      });
+      .then(({ hits }) => hits);
   },
 
   set query(value) {
@@ -21,6 +19,6 @@ export default {
 
   // увеличение номера страницы на 1 при нажатии кнопки Load more
   increasePageNumber() {
-    this.page = this.page + 1;
+    this.page += 1;
   },
 };

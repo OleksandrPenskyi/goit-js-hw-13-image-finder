@@ -15,6 +15,6 @@ export default {
 
   // для удаления всего после поиска нового
   clearMarkupHTML() {
-    galerryRef.innerHTML = ''; //todo для удаления всего после поиска нового
+    galerryRef.innerHTML = ''; // todo для удаления всего после поиска нового
   },
 };
